@@ -13,7 +13,8 @@ D DELETE
 void addReg();
 void showReg();
 void menu();
-{
+
+void addReg(){
     cout << "Datos del estudiante\n";
     cout << "CIF: ";
     scanf(" %[^\n]", people[pos].cif);
@@ -25,7 +26,7 @@ void menu();
     scanf("%d", &people[pos].year);
 }
 
-void showReg();
+
 void showReg()
 {
     for (int i = 0; i < pos; i++)
@@ -39,7 +40,8 @@ void menu()
 {
     int op = 0;
     do
-    { systeam("cls || clear")
+    {
+        system("cls || clear");
         cout << "1. Agregar \n";
         cout << "2. Mostrar \n";
         cout << "3. Salir \n";
